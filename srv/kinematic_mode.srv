@@ -1,0 +1,4 @@
+string requested_kinematic_mode
+
+---
+bool flag
