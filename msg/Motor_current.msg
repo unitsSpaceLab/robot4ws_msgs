@@ -3,7 +3,7 @@ Header header
 #CONSTANT
 uint8 motors = 8
 uint8 firmware_version = 46
-float scale_factor = 0.2
+float64 scale_factor = 0.2
 
 #REST OF THE MESSAGE
 

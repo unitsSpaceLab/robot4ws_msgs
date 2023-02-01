@@ -26,6 +26,11 @@ find_package(catkin REQUIRED COMPONENTS
    Motor_temperature_int.msg
    Motor_current.msg
    Motor_current_int.msg
+   BatteryState.msg
+   JointState1.msg
+   SensorState.msg
+   Sound.msg
+   VersionInfo.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -33,6 +38,7 @@ find_package(catkin REQUIRED COMPONENTS
    FILES
    kinematic_mode.srv
    enable_logiteck_joystick.srv
+   reset_board.srv
  )
 
 ## Generate added messages and services with any dependencies listed here
