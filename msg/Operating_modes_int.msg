@@ -5,8 +5,8 @@
 Header header
 
 #CONSTANT
-uint8 motors = 8
-uint8 firmware_version = 46
+#uint8 motors = 8
+#uint8 firmware_version = 46
 #uint8[] valid_mode_id = [0, 1, 3, 4, 5, 16]
 #string[] modes = ["Current Control", "Velocity Control", "Position Control", "Extended Position Control", "Current Base Control", "PWM Control"]
 

@@ -1,4 +1,14 @@
+# @author: Matteo Caruso
+# @email: matteo.caruso@phd.units.it
+# @email: matteo.caruso1993@gmail.com
+
 Header header
+
+#CONSTANT
+#uint8 motors = 8
+#uint8 firmware_version = 46
+
+#REST OF THE MESSAGE
 
 float64 One_Primary
 float64 One_Secondary
