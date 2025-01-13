@@ -16,4 +16,10 @@
   
   <exec_depend>message_runtime</exec_depend> 
 
+  <build_depend>vision_msgs</build_depend>
+  <exec_depend>vision_msgs</exec_depend>
+
+  <build_depend>nav_msgs</build_depend>
+  <exec_depend>nav_msgs</exec_depend>
+
 </package>

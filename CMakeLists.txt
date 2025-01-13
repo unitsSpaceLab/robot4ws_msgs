@@ -6,6 +6,9 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
   message_generation
+  sensor_msgs
+  nav_msgs
+  vision_msgs
 )
 
 
@@ -33,6 +36,9 @@ find_package(catkin REQUIRED COMPONENTS
    VersionInfo.msg
    Vector3Array.msg
    neural_network_in_out.msg
+   ColorMessage.msg
+   ColorDetection3D.msg
+   ColorDetection3DArray.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -48,6 +54,9 @@ find_package(catkin REQUIRED COMPONENTS
    DEPENDENCIES
    std_msgs
    geometry_msgs
+   sensor_msgs
+   nav_msgs
+   vision_msgs
  )
 
 ################################################
@@ -61,8 +70,7 @@ find_package(catkin REQUIRED COMPONENTS
 ###################################
 
 catkin_package(
-  CATKIN_DEPENDS std_msgs message_runtime geometry_msgs
-
+  CATKIN_DEPENDS std_msgs message_runtime geometry_msgs vision_msgs nav_msgs
 )
 
 ###########
