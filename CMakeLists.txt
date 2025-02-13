@@ -39,6 +39,7 @@ find_package(catkin REQUIRED COMPONENTS
    ColorMessage.msg
    ColorDetection3D.msg
    ColorDetection3DArray.msg
+   SlipUpdate.msg
  )
 
 ## Generate services in the 'srv' folder
