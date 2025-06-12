@@ -1,0 +1,10 @@
+# Coeffs for representing slip curves
+std_msgs/Float32MultiArray slip_ratio
+std_msgs/Float32MultiArray slip_angle
+std_msgs/Float32MultiArray approach_angles
+std_msgs/Float32MultiArray commanded_velocities
+std_msgs/Float32MultiArray steer_angle
+
+
+uint32 map_cell_x
+uint32 map_cell_y
