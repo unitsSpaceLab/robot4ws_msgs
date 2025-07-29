@@ -1,31 +1,21 @@
-# @author: Matteo Caruso
-# @email: matteo.caruso@phd.units.it
-# @email: matteo.caruso1993@gmail.com
+std_msgs/Header header
 
-Header header
-
-#CONSTANT
-#uint8 motors = 8
-#uint8 firmware_version = 46
-
-#REST OF THE MESSAGE
-
-float64 One_Primary
-float64 One_Secondary
-float64 Two_Primary
-float64 Two_Secondary
-float64 Three_Primary
-float64 Three_Secondary
-float64 Four_Primary
-float64 Four_Secondary
-float64 Five_Secondary
-float64 Five_Primary
-float64 Six_Primary
-float64 Six_Secondary
-float64 Seven_Primary
-float64 Seven_Secondary
-float64 Eight_Primary
-float64 Eight_Secondary
+float64 one_primary     # BR drive
+float64 one_secondary
+float64 two_primary     # FR drive
+float64 two_secondary
+float64 three_primary   # BL drive
+float64 three_secondary
+float64 four_primary    # FL drive
+float64 four_secondary
+float64 five_primary    # BR steer
+float64 five_secondary
+float64 six_primary     # FR steer
+float64 six_secondary
+float64 seven_primary   # BL steer
+float64 seven_secondary
+float64 eight_primary   # FL steer
+float64 eight_secondary
 
 
 #====================================================================

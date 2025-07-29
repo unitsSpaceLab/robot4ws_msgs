@@ -36,21 +36,21 @@ uint8 TORQUE_OFF = 2
 ########################################
 # Messages
 ########################################
-Header  header
+std_msgs/Header  header
 uint8   bumper
 float32 cliff
 float32 sonar
 float32 illumination
 uint8   led
-uint8  button
-bool   torque
-int32  BRWF_encoder    # (-2,147,483,648 ~ 2,147,483,647)
-int32  FRWF_encoder    # (-2,147,483,648 ~ 2,147,483,647)
-int32  BLWF_encoder    # (-2,147,483,648 ~ 2,147,483,647)
-int32  FLWF_encoder    # (-2,147,483,648 ~ 2,147,483,647)
-int32  BRWS_encoder    # (-2,147,483,648 ~ 2,147,483,647)
-int32  FRWS_encoder    # (-2,147,483,648 ~ 2,147,483,647)
-int32  BLWS_encoder    # (-2,147,483,648 ~ 2,147,483,647)
-int32  FLWS_encoder    # (-2,147,483,648 ~ 2,147,483,647)
+uint8   button
+bool    torque
+int32   brwf_encoder    # (-2,147,483,648 ~ 2,147,483,647)
+int32   frwf_encoder    # (-2,147,483,648 ~ 2,147,483,647)
+int32   blwf_encoder    # (-2,147,483,648 ~ 2,147,483,647)
+int32   flwf_encoder    # (-2,147,483,648 ~ 2,147,483,647)
+int32   brws_encoder    # (-2,147,483,648 ~ 2,147,483,647)
+int32   frws_encoder    # (-2,147,483,648 ~ 2,147,483,647)
+int32   blws_encoder    # (-2,147,483,648 ~ 2,147,483,647)
+int32   flws_encoder    # (-2,147,483,648 ~ 2,147,483,647)
 
-float32  battery
+float32 battery

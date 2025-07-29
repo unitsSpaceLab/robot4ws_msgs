@@ -2,7 +2,6 @@
 # @email: matteo.caruso@phd.units.it
 # @email: matteo.caruso1993@gmail.com
 
-bool reset
-
+bool enable_controller
 ---
-bool status
+bool success

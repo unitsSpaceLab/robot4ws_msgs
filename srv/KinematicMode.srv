@@ -2,7 +2,6 @@
 # @email: matteo.caruso@phd.units.it
 # @email: matteo.caruso1993@gmail.com
 
-bool enable_controller
-
+string requested_kinematic_mode
 ---
-bool success
+bool flag

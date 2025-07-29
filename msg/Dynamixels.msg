@@ -2,19 +2,19 @@
 # @email: matteo.caruso@phd.units.it
 # @email: matteo.caruso1993@gmail.com
 
-Header header
+std_msgs/Header header
 
 
 #CONSTANT
-uint8 motors = 8
-uint8 firmware_version = 46
+uint8 MOTORS = 8
+uint8 FIRMWARE_VERSION = 46
 
 #REST OF THE MESSAGE
-float64 Right_Back_Dynamixel_Velocity
-float64 Right_Front_Dynamixel_Velocity
-float64 Left_Back_Dynamixel_Velocity
-float64 Left_Front_Dynamixel_Velocity
-float64 Right_Back_Dynamixel_Position
-float64 Right_Front_Dynamixel_Position
-float64 Left_Back_Dynamixel_Position
-float64 Left_Front_Dynamixel_Position
+float64 right_back_dynamixel_velocity
+float64 right_front_dynamixel_velocity
+float64 left_back_dynamixel_velocity
+float64 left_front_dynamixel_velocity
+float64 right_back_dynamixel_position
+float64 right_front_dynamixel_position
+float64 left_back_dynamixel_position
+float64 left_front_dynamixel_position

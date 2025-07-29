@@ -1,17 +1,30 @@
 # robot4ws_msgs
-A ROS package containing the definition of the custom ROS messages used by the rover Archimede
+A ROS2 package containing the definition of the custom interfaces used by the Archimede rover
 
 
-# Installation
+## Dependencies
+### Python dependecies
+(Also listed in *pkgs_python_requirements.txt* of the *archimede_rover* repo)
+
+* empy==3.3.4 # version 4.1 tried, and gives some errors
+* lark
+
+
+## Installation
+change <ros2_ws> with name of the ROS2 workspace
 ```
-cd ~/catkin_ws/src
-git clone https://github.com/matteocaruso1993/robot4ws_msgs
+cd ~/<ros2_ws>/src
+git clone -b ros2_humble https://github.com/unitsSpaceLab/robot4ws_msgs.git
 cd ..
-catkin_make
+colcon build    #or: colcon build --packages-select robot4ws_msgs
 ```
+
+
 
 
 ## Matlab Build custom messages:
+**This section have not been tested in ROS2**
+
 For a full and detailed procedure follow this [guide](https://it.mathworks.com/help/ros/ug/create-custom-messages-from-ros-package.html)
 
 

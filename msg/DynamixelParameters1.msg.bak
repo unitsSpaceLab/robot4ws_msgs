@@ -2,31 +2,30 @@
 # @email: matteo.caruso@phd.units.it
 # @email: matteo.caruso1993@gmail.com
 
-Header header
+std_msgs/Header header
 
 #CONSTANT
-uint8 motors = 8
-uint8 firmware_version = 46
+#uint8 MOTORS = 8
+#uint8 FIRMWARE_VERSION = 46
 
 #REST OF THE MESSAGE
 
-float64 Right_Back_Dynamixel_Moving_Primary_Parameter
-float64 Right_Back_Dynamixel_Moving_Secondary_Parameter
-float64 Right_Front_Dynamixel_Moving_Primary_Parameter
-float64 Right_Front_Dynamixel_Moving_Secondary_Parameter
-float64 Left_Back_Dynamixel_Moving_Primary_Parameter
-float64 Left_Back_Dynamixel_Moving_Secondary_Parameter
-float64 Left_Front_Dynamixel_Moving_Primary_Parameter
-float64 Left_Front_Dynamixel_Moving_Secondary_Parameter
-float64 Right_Back_Dynamixel_Position_Primary_Parameter
-float64 Right_Back_Dynamixel_Position_Secondary_Parameter
-float64 Right_Front_Dynamixel_Position_Primary_Parameter
-float64 Right_Front_Dynamixel_Position_Secondary_Parameter
-float64 Left_Back_Dynamixel_Position_Primary_Parameter
-float64 Left_Back_Dynamixel_Position_Secondary_Parameter
-float64 Left_Front_Dynamixel_Position_Primary_Parameter
-float64 Left_Front_Dynamixel_Position_Secondary_Parameter
-
+float64 one_primary
+float64 one_secondary
+float64 two_primary
+float64 two_secondary
+float64 three_primary
+float64 three_secondary
+float64 four_primary
+float64 four_secondary
+float64 five_primary
+float64 five_secondary
+float64 six_primary
+float64 six_secondary
+float64 seven_primary
+float64 seven_secondary
+float64 eight_primary
+float64 eight_secondary
 
 
 #====================================================================

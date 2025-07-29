@@ -2,7 +2,6 @@
 # @email: matteo.caruso@phd.units.it
 # @email: matteo.caruso1993@gmail.com
 
-string requested_kinematic_mode
-
+bool reset
 ---
-bool flag
+bool status

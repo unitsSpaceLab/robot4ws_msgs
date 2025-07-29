@@ -1,96 +1,55 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(robot4ws_msgs)
 
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+endif()
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-find_package(catkin REQUIRED COMPONENTS
+
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
+
+ set(msg_files
+   "msg/Dynamixels.msg"
+   "msg/DynamixelParameters.msg"
+   "msg/DynamixelParameters1.msg"
+   "msg/OperatingModes.msg"
+   "msg/OperatingModesInt.msg"
+   "msg/MotorTemperature.msg"
+   "msg/MotorTemperatureInt.msg"
+   "msg/MotorCurrent.msg"
+   "msg/MotorCurrentInt.msg"
+   "msg/BatteryState.msg"
+   "msg/JointState1.msg"
+   "msg/SensorState.msg"
+   "msg/Sound.msg"
+   "msg/VersionInfo.msg"
+   "msg/Vector3Array.msg"
+   "msg/TerrainModelInOut.msg"
+ )
+
+ set(srv_files
+   "srv/KinematicMode.srv"
+   "srv/EnableLogiteckJoystick.srv"
+   "srv/ResetBoard.srv"
+ )
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  DEPENDENCIES std_msgs geometry_msgs
+)
+
+
+ament_export_dependencies(rosidl_default_runtime
   std_msgs
   geometry_msgs
-  message_generation
-  sensor_msgs
-  nav_msgs
-  vision_msgs
 )
 
-
-
-################################################
-## Declare ROS messages, services and actions ##
-################################################
-
-
- add_message_files(
-   FILES
-   Dynamixels.msg
-   Dynamixel_parameters.msg
-   Dynamixel_parameters1.msg
-   Operating_modes.msg
-   Operating_modes_int.msg
-   Motor_temperature.msg
-   Motor_temperature_int.msg
-   Motor_current.msg
-   Motor_current_int.msg
-   BatteryState.msg
-   JointState1.msg
-   SensorState.msg
-   Sound.msg
-   VersionInfo.msg
-   Vector3Array.msg
-   neural_network_in_out.msg
-   ColorMessage.msg
-   ColorDetection3D.msg
-   ColorDetection3DArray.msg
-   SlipUpdate.msg
-   Float64NamedArray.msg
-   SlipUpdateRawData.msg
-   SlipUpdateRawDataArray.msg
- )
-
-## Generate services in the 'srv' folder
- add_service_files(
-   FILES
-   kinematic_mode.srv
-   enable_logiteck_joystick.srv
-   reset_board.srv
- )
-
-## Generate added messages and services with any dependencies listed here
- generate_messages(
-   DEPENDENCIES
-   std_msgs
-   geometry_msgs
-   sensor_msgs
-   nav_msgs
-   vision_msgs
- )
-
-################################################
-## Declare ROS dynamic reconfigure parameters ##
-################################################
-
-
-
-###################################
-## catkin specific configuration ##
-###################################
-
-catkin_package(
-  CATKIN_DEPENDS std_msgs message_runtime geometry_msgs vision_msgs nav_msgs
-)
-
-###########
-## Build ##
-###########
-
-
-
-#############
-## Install ##
-#############
-
-
-
-#############
-## Testing ##
-#############
-
-
+ament_package()

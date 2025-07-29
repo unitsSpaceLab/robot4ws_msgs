@@ -1,6 +1,6 @@
 # array of Vector3 messages with header
 
-Header header
+std_msgs/Header header
 
 string[] names
 
