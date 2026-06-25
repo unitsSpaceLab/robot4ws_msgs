@@ -16,7 +16,7 @@ change <ros2_ws> with name of the ROS2 workspace
 cd ~/<ros2_ws>/src
 git clone -b ros2_humble https://github.com/unitsSpaceLab/robot4ws_msgs.git
 cd ..
-colcon build    #or: colcon build --packages-select robot4ws_msgs
+colcon build    # or: colcon build --packages-select robot4ws_msgs
 ```
 
 

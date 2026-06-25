@@ -1,6 +1,6 @@
 # array of Float64 with header and names
 
-Header header
+std_msgs/Header header
 
 string[] names
 

@@ -13,25 +13,35 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(vision_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 
  set(msg_files
-   "msg/Dynamixels.msg"
+   "msg/BatteryState.msg"
+   "msg/ColorDetection3D.msg"
+   "msg/ColorDetection3DArray.msg"
+   "msg/ColorMessage.msg"
    "msg/DynamixelParameters.msg"
    "msg/DynamixelParameters1.msg"
-   "msg/OperatingModes.msg"
-   "msg/OperatingModesInt.msg"
-   "msg/MotorTemperature.msg"
-   "msg/MotorTemperatureInt.msg"
+   "msg/Dynamixels.msg"
+   "msg/Float64NamedArray.msg"
+   "msg/JointState1.msg"
    "msg/MotorCurrent.msg"
    "msg/MotorCurrentInt.msg"
-   "msg/BatteryState.msg"
-   "msg/JointState1.msg"
+   "msg/MotorTemperature.msg"
+   "msg/MotorTemperatureInt.msg"
+   "msg/OperatingModes.msg"
+   "msg/OperatingModesInt.msg"
    "msg/SensorState.msg"
+   "msg/SlipUpdate.msg"
+   "msg/SlipUpdateRawData.msg"
+   "msg/SlipUpdateRawDataArray.msg"
    "msg/Sound.msg"
-   "msg/VersionInfo.msg"
-   "msg/Vector3Array.msg"
    "msg/TerrainModelInOut.msg"
+   "msg/Vector3Array.msg"
+   "msg/VersionInfo.msg"
  )
 
  set(srv_files
@@ -43,13 +53,16 @@ find_package(geometry_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
-  DEPENDENCIES std_msgs geometry_msgs
+  DEPENDENCIES std_msgs geometry_msgs vision_msgs nav_msgs sensor_msgs
 )
 
 
 ament_export_dependencies(rosidl_default_runtime
   std_msgs
   geometry_msgs
+  vision_msgs
+  nav_msgs
+  sensor_msgs
 )
 
 ament_package()
